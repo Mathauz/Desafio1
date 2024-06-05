@@ -17,13 +17,9 @@
     function clicou() {
 
         let p = window.prompt(`Qual produto está comprando?`)
-
-        let c = window.prompt(`Quanto custa ${p} que está comprando?`)
-
-        let d = window.prompt(`Qual foi o valor que deu pra pagar o ${p}?`)
-
-        let t = c-d
-
+        let c = Number.parseFloat(window.prompt(`Quanto custa ${p} que está comprando?`))
+        let d = Number.parseFloat(window.prompt(`Qual foi o valor que deu pra pagar o ${p}?`))
+        let t = Number.parseFloat(d-c)
         window.alert(`Vc comprou ${p} que custou R$ ${c}. Deu R$ ${d} em dinheiro e vai receber R$ ${t} de troco.`)
     }
     </script>
