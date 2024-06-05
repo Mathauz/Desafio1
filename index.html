@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar produto</title>
+    <style>
+        body{font:22pt;}
+        button{font-size: 22px; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>CALCULANDO O TROCO</h1>
+    <button onclick="clicou()">COMPRAR</button>
+    <script>
+    
+    function clicou() {
+
+        let p = window.prompt(`Qual produto está comprando?`)
+
+        let c = window.prompt(`Quanto custa ${p} que está comprando?`)
+
+        let d = window.prompt(`Qual foi o valor que deu pra pagar o ${p}?`)
+
+        let t = c-d
+
+        window.alert(`Vc comprou ${p} que custou R$ ${c}. Deu R$ ${d} em dinheiro e vai receber R$ ${t} de troco.`)
+    }
+    </script>
+</body>
+</html>
